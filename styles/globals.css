@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional global styles */
+
+/* Logo styling */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: -0.025em;
+  background: linear-gradient(45deg, #3b82f6, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+/* Typewriter cursor blinking animation */
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+/* Add these styles to your global CSS or a dedicated animation CSS file */
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: white; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: 
+    typewriter 3s steps(40) 0.5s forwards,
+    blink 1s steps(1) infinite;
+  width: 0;
+}
+
+.animate-typewriter2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: 
+    typewriter 3s steps(40) 0.5s forwards,
+    blink 1s steps(1) infinite;
+  width: 0;
+}
+
+.animate-typewriter3 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: 
+    typewriter 3s steps(40) 0.5s forwards,
+    blink 1s steps(1) infinite;
+  width: 0;
+}
+
+.animate-typewriter4 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: 
+    typewriter 3s steps(40) 0.5s forwards,
+    blink 1s steps(1) infinite;
+  width: 0;
+}
+
+.animate-typewriter5 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: 
+    typewriter 3s steps(40) 0.5s forwards,
+    blink 1s steps(1) infinite;
+  width: 0;
+}
+
+.animate-typewriter6 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation: 
+    typewriter 3s steps(40) 0.5s forwards,
+    blink 1s steps(1) infinite;
+  width: 0;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.animate-blink {
+  animation: blink 0.75s steps(1) infinite;
+}
+
+.animate-blink {
+  animation: blink 0.7s infinite;
+}
+
+/* Custom scrollbar for the chat history */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Transition effects */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom form input focus styles */
+input:focus, 
+textarea:focus, 
+select:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
+}
+
+/* Image hover effect */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* For login page animations */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.animate-typewriter {
+  animation: typewriter 3s steps(40, end) 1s forwards;
+}
+
+.animate-typewriter2 {
+  animation: typewriter 3s steps(40, end) 4s forwards;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional global styles */
+
+/* Logo styling */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: -0.025em;
+  background: linear-gradient(45deg, #3b82f6, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+/* Typewriter animations - improved and consolidated */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: currentColor; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Base typewriter animation - can be customized with delays */
+.animate-typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  width: 0;
+  animation: 
+    typewriter 2.5s steps(40) forwards,
+    blink 0.8s steps(1) infinite;
+}
+
+/* Animation delay classes */
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 3s;
+}
+
+.delay-3 {
+  animation-delay: 6s;
+}
+
+.delay-4 {
+  animation-delay: 9s;
+}
+
+.delay-5 {
+  animation-delay: 12s;
+}
+
+.delay-6 {
+  animation-delay: 15s;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+/* Custom scrollbar for the chat history */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Transition effects */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom form input focus styles */
+input:focus, 
+textarea:focus, 
+select:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
+}
+
+/* Image hover effect */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
